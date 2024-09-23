@@ -34,27 +34,26 @@ header{
     color: #ccc;
     font-weight: 400;
     font-size: 13px;
-    line-height: 15.25px;
-
 }
 header span{
-    padding-right: 15px;
-    gap: 20px;
+    padding-right: 95px;
 }
 nav{
     display: flex;
     align-items: center;
     margin-top: 10px;
-    margin-left: 5rem;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
-p{
-    padding-left: 85px;
+.top-bar p{
+    padding-left: 35px;
 }
 nav ul{
     display: flex;
     margin-top: 18px;
-    padding-left: 90px;
+    padding-left: 50px;
     list-style: none;
     gap: 30px;
     font-weight: bold;
@@ -67,6 +66,22 @@ nav ul li {
     font-family: "Josefin Sans", sans-serif;
 
 }
+
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: #f9c931;
+    transition: 0.4sec ease;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
 .BOOK-NOW{
     width: 100px;
     padding: 9px;
@@ -289,8 +304,10 @@ nav ul li {
    font-size: 14px;
    font-weight: 400;
    line-height: 19.95px;
-   text-align: start;
-   margin-inline-start: -55px;
+  text-align: start;
+  margin-left: 25px;
+  margin-top: 5px;
+   /* margin-inline-start: -55px; */
    font-family: "Roboto", sans-serif;
 
 }
@@ -344,7 +361,7 @@ nav ul li {
 
 .deluxe-room-info h3{
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
     font-weight:700;
     line-height: 24px;
     margin-left: 80px;
@@ -352,7 +369,7 @@ nav ul li {
     font-family: "Josefin Sans", sans-serif;
 } 
 .deluxe-room-info h1{
-    font-size: 48px;
+    font-size: 39px;
     font-weight: 700;
     line-height: 66.4px ;
     margin: 10px 0;
@@ -361,11 +378,12 @@ nav ul li {
     font-family: "Roboto Condensed", sans-serif;
 }
 .deluxe-room-info p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 25.59px;
     font-family: "Roboto", sans-serif;
-
+    text-align: start;
+    margin-left: 80px;
 }
 
 .deluxe-room-info button{
@@ -501,4 +519,10 @@ font-family: "Roboto", sans-serif;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-weight:300 ;
+}
+
+
+
+@media screen and (max-width:800px) {
+
 }

@@ -5,9 +5,14 @@
 }
 body{
     height: 100vh;
-    width: 100%;
     background-color: #060606;
     color: #fff;
+}
+
+.home-nav.active{
+    color: #f9c931;
+    background-color: #f9c931;
+    border-radius: 5px;
 }
 
 a:hover{
@@ -29,27 +34,26 @@ header{
     color: #ccc;
     font-weight: 400;
     font-size: 13px;
-    line-height: 15.25px;
-
 }
 header span{
-    padding-right: 15px;
-    gap: 20px;
+    padding-right: 95px;
 }
 nav{
     display: flex;
     align-items: center;
     margin-top: 10px;
-    margin-left: 5rem;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
-p{
-    padding-left: 85px;
+.top-bar p{
+    padding-left: 35px;
 }
 nav ul{
     display: flex;
     margin-top: 18px;
-    padding-left: 90px;
+    padding-left: 50px;
     list-style: none;
     gap: 30px;
     font-weight: bold;
@@ -61,6 +65,19 @@ nav ul li {
     line-height: 16px;
     font-family: "Josefin Sans", sans-serif;
 
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: #f9c931;
+    transition: 0.4sec ease;
+}
+nav ul li a:hover::after{
+    width: 100%;
 }
 .BOOK-NOW{
     width: 100px;
@@ -215,7 +232,8 @@ font-size: 14px;
 font-weight: 400;
 text-align: start;
 text-transform: capitalize;
-margin-inline-start: -55px;
+margin-left: 20px;
+/* margin-inline-start: -55px; */
 font-family: "Roboto", sans-serif;
 }
 .book-now{
